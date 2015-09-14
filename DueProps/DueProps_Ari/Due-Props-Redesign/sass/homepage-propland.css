@@ -1,0 +1,76 @@
+
+/*body{width:100%;height:100%;overflow:hidden;position:relative;background:#0073e6
+
+url(img/propland/backdrop.jpg) left top repeat-x;padding:0;margin:0;font:normal 16px 'Helvetica Neue',
+Helvetica, Arial, sans-serif}
+*/
+/*#props-land{width:100%;height:100%;min-width:1350px;min-height:600px;margin:0
+auto;position:absolute;z-index:-10; }*/
+
+#cloud-left,#cloud-right,#angel,#sunburst,#cliff,#castle,#foreground-left,#foreground-right{position:absolute}
+
+#cloud-left,#cloud-right{width:1068px;height:163px;top:-63px;z-index:200;background:url(img/propland/clouds.jpg)
+0 0 no-repeat}
+
+#cloud-left{left:-1080px}
+#cloud-right{left:615px}
+
+#cliff{background: url("img/propland/cliff.png") no-repeat scroll 0 0 transparent;
+    height: 583px;
+    left: 1080px;
+    position: absolute;
+    top: -39px;
+    width: 690px;
+    z-index: 300;
+
+}
+
+#castle{
+	background: url("img/propland/castle.png") repeat-x scroll 0 0 transparent;
+height: 724px;
+left: -909px;
+top:55px;
+width: 5000px;
+z-index: 400;
+position:absolute;
+}
+
+#angel{
+  background: url("img/propland/angel-small.png") no-repeat scroll 0 0 transparent;
+    height: 110px;
+    left: -140px;
+    top: 80px;
+    width: 131px;
+    z-index: 500;
+
+/*	-moz-transform: translatez(0pt);
+    -moz-transition: all 0.2s ease 0s;
+	-webkit-transform:translateZ(0);
+	-webkit-transition:all 0.5s ease;
+	transform:translateZ(0);
+	transition:all 0.5s ease*/
+	}
+#angel.animate{-moz-animation:flyaway 3s ease;-webkit-animation:flyaway 3s ease;animation:flyaway 3s ease}
+
+#angel:hover{/*-moz-transform:scale(1.1);-webkit-transform:scale(1.1);transform:scale(1.1);*/}
+
+#foreground-left{
+  background: url("file:///Users/obie/Dropbox/DueProps_Ari/Due-Props-Redesign/less/img/propland/foreground-left.png") no-repeat scroll 0 0 transparent;
+    height: 448px;
+    left: -435px;
+    position: absolute;
+    top: 331px;
+    width: 1574px;
+    z-index: 600;
+
+}
+
+#foreground-right{
+	background: url("file:///Users/obie/Dropbox/DueProps_Ari/Due-Props-Redesign/less/img/propland/foreground-right.png") no-repeat scroll 0 0 transparent;
+    height: 398px;
+    left: 825px;
+    position: absolute;
+    top: 361px;
+    width: 849px;
+    z-index: 700;
+}

@@ -1,0 +1,20 @@
+FIRST LAUNCH
+
+-add FAQ question about special order --> sales
+-footer: blog, investors, pricing and plans,  terms of service
+-how it works page
+-load up prop browser
+-write "how it helps:" employers, employees, our company
+-put prop images in how it works
+-adjust trustmatrix image
+
+
+SECOND LAUNCH
+
+-security seal
+-about dueprops
+-dueprops HQ
+-support form
+-new sign up form
+
+-footer: 

@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Apple Slide-Menu Demo</title>
+
+<!-- Menu requires jQuery and easing plugin if you want some fanciness -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="assets/jquery.animation.easing.js"></script>
+
+<!-- Menu script -->
+<script src="slideMenu.js"></script>
+
+<!-- Clean slate for the demo -->
+<link rel="stylesheet" href="assets/_reset.css" />
+
+<style type="text/css">
+
+/* Demo styling, not required for menu to work properly */
+/***************************************************************************************/
+	body {font-family: 'Lucida Grande', verdana, sans-serif;font-size:13px;}
+	a:link, a:visited, a:hover, a:active {color:#234786;text-decoration:none;}
+	#menu-controls {width:780px;margin:0 auto;padding:10px;text-align:center;border:1px solid #eee;}
+	#menu-controls a {margin:0 10px;color:#000;outline:none}
+	#menu-controls a.active {font-weight:bold;}
+	.options {width:402px;margin:50px auto 0;text-align:center;}
+	.options span {font-size:10px;font-weight:bold}
+	.options div{width:200px;float:left}
+	#menu-container.xray {overflow:visible;}
+	li a{position:relative;display:block;text-align:center;}
+	h4{margin-top:10px;font-weight:bold;font-size:14px;line-height:16px;}
+	#loading{position:absolute;width:31px;height:31px;top:50px;left:370px;
+		background-image:url(data:image/gif;base64,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)
+	}
+/***************************************************************************************/
+
+/* REQUIRED FOR MENU TO WORK
+	-------------------------
+	All margins, padding, sizes, borders, etc. are set for this particular demo and will vary with use,
+	but items marked 'REQUIRED' are essential. */
+
+	#menu-container {
+		position:relative; /* REQUIRED */
+		width:800px;
+		height:140px;
+		padding:20px 0 30px;
+		margin:180px auto 0;
+		overflow:hidden; /* REQUIRED */
+		border-style:solid;
+		border-width:1px 1px 0;
+		border-color:#eee;
+	}
+	#menu-container ul {
+		list-style-type:none; /* REQUIRED */
+		position:absolute; /* REQUIRED */
+		right:0; /* REQUIRED */
+	}
+	#menu-container ul li {
+		position:absolute; /* REQUIRED */
+		width:130px; /* Size of menu list item, or 'cell' */
+		height:150px; /* Size of menu list item, or 'cell' */
+		padding:10px
+	}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="menu-container">
+		<div id="loading"></div>
+		<ul>
+			<li><a href="#"><img src="assets/img/1a.jpg" /></a><h4><a href="#">LCD Projectors</a></h4></li>
+			<li><a href="#"><img src="assets/img/1b.jpg" /></a><h4><a href="#">Screens</a></h4></li>
+			<li><a href="#"><img src="assets/img/1c.jpg" /></a><h4><a href="#">Plasma Displays</a></h4></li>
+			<li><a href="#"><img src="assets/img/1d.jpg" /></a><h4><a href="#">Video Cameras</a></h4></li>
+			<li><a href="#"><img src="assets/img/1e.jpg" /></a><h4><a href="#">Cables &amp; Accessories</a></h4></li>
+		</ul>
+		<ul>
+			<li><a href="#"><img src="assets/img/2a.jpg" /></a><h4><a href="#">Speakers</a></h4></li>
+			<li><a href="#"><img src="assets/img/2b.jpg" /></a><h4><a href="#">Microphones</a></h4></li>
+			<li><a href="#"><img src="assets/img/2c.jpg" /></a><h4><a href="#">Mixers</a></h4></li>
+			<li><a href="#"><img src="assets/img/2d.jpg" /></a><h4><a href="#">Communication</a></h4></li>
+		</ul>
+		<ul>
+			<li><a href="#"><img src="assets/img/3a.jpg" /></a><h4><a href="#">Laptops</a></h4></li>
+			<li><a href="#"><img src="assets/img/3b.jpg" /></a><h4><a href="#">Desktops</a></h4></li>
+			<li><a href="#"><img src="assets/img/3c.jpg" /></a><h4><a href="#">Networking</a></h4></li>
+			<li><a href="#"><img src="assets/img/3d.jpg" /></a><h4><a href="#">Scanners</a></h4></li>
+			<li><a href="#"><img src="assets/img/3e.jpg" /></a><h4><a href="#">Printers</a></h4></li>
+		</ul>
+		<ul>
+			<li><a href="#"><img src="assets/img/4a.jpg" /></a><h4><a href="#">Audiovisual</a></h4></li>
+			<li><a href="#"><img src="assets/img/4b.jpg" /></a><h4><a href="#">Audience Response</a></h4></li>
+			<li><a href="#"><img src="assets/img/4c.jpg" /></a><h4><a href="#">Stage &amp; Lighting</a></h4></li>
+			<li><a href="#"><img src="assets/img/4d.jpg" /></a><h4><a href="#">Teleprompters</a></h4></li>
+		</ul>
+	</div>
+	<div id="meet-the-props-controls">
+		<a href="#" data-target="0" class="active">Pro Video</a>
+		<a href="#" data-target="1">Pro Audio</a>
+		<a href="#" data-target="2">Computer &amp; Office</a>
+		<a href="#" data-target="3">Meeting &amp; Event</a>
+	</div>
+	<div class="options">
+		<div id="xray">
+			<a href="#">Toggle X-Ray</a><br /><br /><span>OFF</span>
+		</div>
+		<div id="auto">
+			<a href="#">Toggle Auto</a><br /><br /><span>OFF</span>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	/**
+	 * MENU OPTIONS (default values in parenthesis)
+	 * ------------
+	 * div:        Where the slide-menu will go. ("#menu-container")
+	 * controls:   Where are the controls for the menu. ("#menu-controls")
+	 * loader:     If you are using a loading graphic, the menu will hide it for you once loaded. If not,
+	 *               set it to 'false' or ''. (false)
+	 * x:          Total width of list item including margins and padding in px. (150)
+	 * y:          Total height of list item including margins and padding in px. (150)
+	 * start:      Index of <ul> to open first. (0)
+	 * speed:      Speed of all animations in ms . (300)
+	 * delay:      Delay between list item animations when transitioning in ms. (60)
+	 * easing:     Type of easing to use for list item animations, use '' for no easing effect. ('')
+	 *               FYI - "easeOutBackSmall" is a custom addition I made for this demo, it is not included in the
+	 *               standard set of easing animations.
+	 * easeIn:     Type of easing to use for initial drop-in animation, use '' for none. ('')
+	 *               This demo includes the jQuery easing plugin: http://gsgd.co.uk/sandbox/jquery/easing/
+	 *               Supported easing methods in the plugin are listed and demoed at the above url.
+	 * preloadAll: Wait for all menu images to load before animating in, or just the first set? (false)
+	 *               By default, with this set to false, the menu will wait until all images in the first menu set are
+	 *               loaded before the beginning animation is fired. If set to true, it will wait for all menu images to load.
+	 */
+
+	var options = {
+		div: "#menu-container",
+		controls: "#menu-controls",
+		loader: "#loading",
+		x: 150,
+		y: 200,
+		easing: "easeOutBackSmall",
+		easeIn: "easeOutBack",
+		preloadAll: true
+	};
+
+
+	var menu = new slideMenu(options);
+
+	/*
+		The menu will wait until images are loaded before initializing, see "preloadAll" above.
+		If you want to wait until EVERYTHING on the page is loaded, simply do this:
+
+		$(window).load(function(){
+			var menu = new slideMenu(options);
+		});
+	*/
+
+
+	/*----------------------------------------------------------------------------------
+	 * Demo stuff, not required for menu to work
+	 *---------------------------------------------------------------------------------*/
+	var auto = false, x, inc;
+
+	// Toggle x-ray
+	$("#xray a").click(function(){
+		toggle_xray();
+		return false;
+	});
+
+	// Toggle auto
+	$("#auto a").click(function(){
+		toggle_auto();
+		return false;
+	});
+
+	// If xray enabled on load, make it so!
+	if (window.location.hash.substring(1) == 'xray') toggle_xray();
+
+	function toggle_xray(){
+		$(options.div).toggleClass("xray");
+		$("#xray span").text($(options.div).hasClass("xray") ? 'ON' : 'OFF');
+		window.location.hash = $(options.div).hasClass("xray") ? 'xray' : '';
+	}
+
+	function toggle_auto(){
+		if (auto === false){
+			x = $("#menu-controls a.active").data("target");
+			auto_advance();
+			inc = setInterval(auto_advance, 3000);
+			auto = true;
+		}
+		else{
+			clearInterval(inc);
+			auto = false;
+		}
+		$("#auto span").text(auto === true ? 'ON' : 'OFF');
+	}
+
+	function auto_advance(){
+		// Max index is 3, so don't go over
+		x = x < 3 ? x + 1 : 0;
+		// Using the switchTo method, we can advance the menu to a desired index
+		menu.switchTo(x);
+	}
+
+});
+</script>
+
+</body>
+</html>
