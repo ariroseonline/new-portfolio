@@ -1,0 +1,31 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'uninstall',
+1 verbose cli   '--save-dev',
+1 verbose cli   'gulp-file' ]
+2 info using npm@2.13.0
+3 info using node@v0.12.0
+4 verbose node symlink /usr/local/bin/node
+5 verbose unbuild node_modules/gulp-file
+6 info preuninstall gulp-file@0.2.0
+7 info uninstall gulp-file@0.2.0
+8 verbose unbuild rmStuff gulp-file@0.2.0 from /Users/arirose/PortfolioStory/node_modules
+9 info postuninstall gulp-file@0.2.0
+10 silly gentlyRm /Users/arirose/PortfolioStory/node_modules/gulp-file is being purged from base /Users/arirose/PortfolioStory
+11 verbose gentlyRm don't care about contents; nuking /Users/arirose/PortfolioStory/node_modules/gulp-file
+12 silly vacuum-fs purging /Users/arirose/PortfolioStory/node_modules/gulp-file
+13 verbose stack Error: ENOTEMPTY, rmdir '/Users/arirose/PortfolioStory/node_modules/gulp-file'
+13 verbose stack     at Error (native)
+14 verbose cwd /Users/arirose/PortfolioStory
+15 error Darwin 15.0.0
+16 error argv "node" "/usr/local/bin/npm" "uninstall" "--save-dev" "gulp-file"
+17 error node v0.12.0
+18 error npm  v2.13.0
+19 error path /Users/arirose/PortfolioStory/node_modules/gulp-file
+20 error code ENOTEMPTY
+21 error errno -66
+22 error ENOTEMPTY, rmdir '/Users/arirose/PortfolioStory/node_modules/gulp-file'
+23 error If you need help, you may report this error at:
+23 error     <https://github.com/npm/npm/issues>
+24 verbose exit [ -66, true ]

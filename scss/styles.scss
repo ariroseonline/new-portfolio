@@ -1,0 +1,44 @@
+@import "bootstrap"; 
+@import "fonts";
+
+// Modules and Variables
+@import "partials/base";
+
+// Partials
+@import "partials/header";
+@import "partials/footer";
+@import "partials/body";
+// @import "partials/typography";
+// @import "partials/buttons";
+// @import "partials/figures";
+
+// Third-party
+// @import "vendor/colorpicker";
+// @import "vendor/jquery.ui.core";
+
+@import "../node_modules/flickity/dist/flickity.min";
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+.projects-nav {
+	text-align: center;
+	p {
+		display: inline-block;
+	}
+}
+.project-link {
+	margin-right: 25px;
+	display: inline-block;
+	&.is-selected {
+		border-bottom: 5px solid black;
+	}
+}
+
+.project {
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	background-color: red;
+}
