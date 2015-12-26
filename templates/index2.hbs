@@ -48,7 +48,7 @@
 		<div class="container">
 			<ul class="projects-nav unstyled clearfix">
 				{{#each projects}}
-					{{> project}}
+					<li class="clearfix project-link"><span class="company">{{title}}</span></li>
 				{{/each}}
 	   <!--  			<li class="clearfix project-link gowatchit"><span class="company">GoWatchIt</span>Superwidget</li>
 
@@ -67,7 +67,8 @@
 
 	    		<ul class="projects unstyled">
 	    			{{#each projects}}
-	    			BLAHfdsalkj
+	    				{{> project}}
+
 	    			{{/each}}
 	    		<!-- 	<li class="clearfix project gowatchit">
 
