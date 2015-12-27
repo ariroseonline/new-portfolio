@@ -46,14 +46,22 @@ h1 {
   line-height: .5;
 }
 
+section {
+	padding: 30px 0;
+}
+
+
+
 .section-header {
 	position: relative;
 	text-align: center;
+	padding: 30px 0;
 	h2 {
 		text-transform: uppercase;
 		display: inline-block;
 		background: #ffffff;
 		padding: 0 15px;
+		margin: 0;
 	}
 
 	h2:before {
@@ -63,8 +71,8 @@ h1 {
 			width: 100%;
 			border-bottom: 1px solid black;
 			left: 0;
-			top: 55%;
-			// top: 75%; //this looks good too
+			top: 50%;
+			// top: 58%; //this looks good too
 			z-index: -1;
 
 		};
