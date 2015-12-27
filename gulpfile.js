@@ -50,7 +50,7 @@ gulp.task('templates', function () {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['browserify']);
-    gulp.watch('scss/*.scss', ['styles']);
+    gulp.watch('scss/**/*.scss', ['styles']);
     gulp.watch('templates/*.hbs', ['templates']);
     gulp.watch('projects.json', ['templates']);
 });

@@ -1,15 +1,18 @@
 var $ = require('jquery');
 require('jquery-bridget');
-var Flickity = require('flickity');
+var Flickity = require('flickity-imagesloaded');
 // make Flickity a jQuery plugin
 $.bridget( 'flickity', Flickity );
+
 
 
 $(document).ready(function(){
 	var $projects = $('.projects').flickity({
 	  // options
+	  imagesLoaded: true,
 	  wrapAround: true,
-	  pageDots: false
+	  pageDots: false,
+	  setGallerySize: true
 	});
 	
 	// elements

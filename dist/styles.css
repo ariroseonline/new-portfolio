@@ -5401,6 +5401,48 @@ ul, ol {
   margin: 0;
   padding: 0; }
 
+p {
+  font-family: Didot;
+  font-size: 22px;
+  line-height: 50px;
+  font-weight: 100; }
+
+.stripe {
+  background: #111;
+  margin-top: 75px;
+  margin-bottom: 75px; }
+
+h1 {
+  font-size: 350px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  line-height: .5; }
+
+.section-header {
+  position: relative;
+  text-align: center; }
+  .section-header h2 {
+    text-transform: uppercase;
+    display: inline-block;
+    background: #ffffff;
+    padding: 0 15px; }
+  .section-header h2:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid black;
+    left: 0;
+    top: 55%;
+    z-index: -1; }
+
+.by-line {
+  text-align: center; }
+  .by-line p {
+    margin-bottom: 0; }
+
 .projects-nav {
   text-align: center; }
   .projects-nav p {
