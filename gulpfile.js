@@ -16,6 +16,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('browserify', function() {
+	console.log('blahhhhh');
   return browserify('./js/app.js')
       .bundle()
       //Pass desired output filename to vinyl-source-stream
@@ -30,7 +31,7 @@ gulp.task('templates', function () {
 	// var templateData = require('./projects');
 
 	options = {
-		ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
+		ignorePartials: false, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
 		batch : ['./templates/partials'],
 		helpers : {
 			capitals : function(str){
@@ -51,7 +52,7 @@ gulp.task('templates', function () {
 gulp.task('watch', function() {
     gulp.watch('js/*.js', ['browserify']);
     gulp.watch('scss/**/*.scss', ['styles']);
-    gulp.watch('templates/*.hbs', ['templates']);
+    gulp.watch('templates/**/*.hbs', ['templates']);
     gulp.watch('projects.json', ['templates']);
 });
 

@@ -28,14 +28,14 @@
 		
 		<div class="container">
 			<section class="by-line">
-				<p>Liberal Artiste, Advertiser, Designer, Web Developer.</p>
-				<p>Haifa, Toronto, State College, Atlanta, Omaha, New York.</p>
+				<p>Web Development | Design | Startups</p>
+				<p>Haifa  &nbsp;  Toronto &nbsp;  State College &nbsp;  Atlanta  &nbsp; Omaha &nbsp; New York</p>
 			</section>
 		</div>
 
 		<section class="container">
 			<div class="section-header">
-				<h2>Biography</h2>
+				<h2>Hi</h2>
 			</div>
 
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sit vitae sint quae temporibus cumque odit voluptates distinctio ad laborum atque corporis dolores, ipsum, suscipit laboriosam a consequatur optio corrupti impedit. Sequi magni iste, neque nostrum, est fugiat. Quo consectetur nobis tempora vitae quae eius facilis modi delectus porro nostrum!</p>
@@ -45,15 +45,45 @@
 
 		<section class="container">
 			<div class="section-header">
-				<h2>Work</h2>
+				<h2>Samples</h2>
 			</div>
 
+
+
 			<div class="container">
-				<ul class="projects-nav unstyled clearfix">
+				<ul class="projects-nav unstyled clearfix row">
 				{{#each projects}}
-					<li class="clearfix project-link"><span class="company">{{title}}</span></li>
+					<li class="clearfix project-link" data-project-id={{id}}><span class="project-name">{{title}}</span></li>
 				{{/each}}
-   <!--  			<li class="clearfix project-link gowatchit"><span class="company">GoWatchIt</span>Superwidget</li>
+  
+    		</ul>
+			
+
+    		<ul class="projects unstyled row">
+    			{{#each projects}}
+    				{{> project}}
+    			{{/each}}
+
+    		</ul>
+			</div>
+    </section>
+
+		
+		
+	
+		<section class="container">
+			<div class="section-header">
+				<h2>Contact</h2>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sit vitae sint quae temporibus cumque odit voluptates distinctio ad laborum atque corporis dolores, ipsum, suscipit laboriosam a consequatur optio corrupti impedit. Sequi magni iste, neque nostrum, est fugiat. Quo consectetur nobis tempora vitae quae eius facilis modi delectus porro nostrum!</p>
+		</section>
+
+	
+	</body>
+</html>
+
+
+ <!--  			<li class="clearfix project-link gowatchit"><span class="company">GoWatchIt</span>Superwidget</li>
 
     			<li class="clearfix project-link gowatchit"><span class="company">GoWatchIt</span>GWI360</li>
     			<li class="clearfix project-link gowatchit"><span class="company">GoWatchIt</span>Home Site</li>
@@ -64,16 +94,6 @@
     			<li class="clearfix project-link dueprops"><span class="company">DueProps</span>Redesign</li>
     			<li class="clearfix project-link side"><span class="company">On The Side</span>Breed Breakdown</li>
     			<li class="clearfix project-link side"><span class="company">On the Side</span>Guess Who Board Game</li> -->
-    		</ul>
-			
-	    	<div class="row">
-	    		<div class="span12">
-
-		    		<ul class="projects unstyled">
-		    			{{#each projects}}
-		    				{{> project}}
-
-		    			{{/each}}
 		    		<!-- 	<li class="clearfix project gowatchit">
 
 		    				<p><span class="company">GoWatchIt</span>Superwidget</p>
@@ -89,27 +109,3 @@
 		    			<li class="clearfix project dueprops"><p><span class="company">DueProps</span>Redesign</p></li>
 		    			<li class="clearfix project side"><p><span class="company">On The Side</span>Breed Breakdown</p></li>
 		    			<li class="clearfix project side"><p><span class="company">On the Side</span>Guess Who Board Game</p></li> -->
-		    		</ul>
-	    		</div>
-	    	</div>
-			</div>
-    </section>
-
-		
-		
-		
-
-
-		<section class="container">
-			<div class="section-header">
-				<h2>Contact</h2>
-			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sit vitae sint quae temporibus cumque odit voluptates distinctio ad laborum atque corporis dolores, ipsum, suscipit laboriosam a consequatur optio corrupti impedit. Sequi magni iste, neque nostrum, est fugiat. Quo consectetur nobis tempora vitae quae eius facilis modi delectus porro nostrum!</p>
-		</section>
-
-	
-	</body>
-</html>
-
-
-
