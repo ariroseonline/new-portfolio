@@ -5,15 +5,16 @@
 			"title": "GoWatchIt: Consumer Site", 
 			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
 			"roles": ["Art Director", "Front-End Developer", "Designer"],
+		  "technologies": ["Javascript"],
 			"images": [
 				{
-					"url": "projects/gwi/1.png"
+					"url": "projects/gwi-site/1.png"
 				},
 				{
-					"url": "projects/gwi/2.png"
+					"url": "projects/gwi-site/2.png"
 				},
 				{
-					"url": "projects/gwi/3.png"					
+					"url": "projects/gwi-site/3.png"					
 				}
 
 			]
@@ -23,15 +24,16 @@
 			"title": "GoWatchIt: Superwidget", 
 			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
 			"roles": ["Art Director", "Front-End Developer", "Designer"],
+			"technologies": ["Javascript"],
 			"images": [
 				{
-					"url": "projects/superwidget/1.png"
+					"url": "projects/gwi-superwidget/1.png"
 				},
 				{
-					"url": "projects/superwidget/1.png"
+					"url": "projects/gwi-superwidget/1.png"
 				},
 				{
-					"url": "projects/superwidget/1.png"					
+					"url": "projects/gwi-superwidget/1.png"					
 				}
 
 			]
@@ -41,26 +43,179 @@
 			"title": "GoWatchIt: Dashboard", 
 			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
 			"roles": ["Art Director", "Front-End Developer", "Designer"],
+			"technologies": ["Javascript"],
 			"images": [
 				{
-					"url": "projects/dashboard/1.png"
+					"url": "projects/gwi-dashboard/1.png"
 				},
 				{
-					"url": "projects/dashboard/2.png"
+					"url": "projects/gwi-dashboard/2.png"
 				},
 				{
-					"url": "projects/dashboard/3.png"					
+					"url": "projects/gwi-dashboard/3.png"					
 				}
 
 			]
-		} 
-	],
-	"_comment": [
-		{"title": "34blahjklfdsa", "image": "yofdkjal"}, 
-		{"title": "project3", "image": "image3"},
-		{"title": "project3", "image": "image3"},
-		{"title": "project5", "image": "image5"},
-		{"title": "project4555", "image": "image3"}
+		}, 
+
+		{	
+			"id": 4,
+			"title": "DueProps", 
+			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
+			"roles": ["Art Director", "Front-End Developer", "Designer"],
+			"technologies": ["Javascript"],
+			"images": [
+				{
+					"url": "projects/dueprops/1.png"
+				},
+				{
+					"url": "projects/dueprops/2.png"
+				},
+				{
+					"url": "projects/dueprops/3.png"					
+				},
+				{
+					"url": "projects/dueprops/4.png"					
+				}
+
+			]
+		},
+
+		{	
+			"id": 5,
+			"title": "Flatiron School", 
+			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
+			"roles": ["Art Director", "Front-End Developer", "Designer"],
+			"technologies": ["Javascript"],
+			"images": [
+				{
+					"url": "projects/flatiron/1.png"
+				},
+				{
+					"url": "projects/flatiron/2.png"
+				},
+				{
+					"url": "projects/flatiron/3.png"					
+				}
+
+			]
+		},
+
+		{	
+			"id": 6,
+			"title": "Wetfeet: Polls", 
+			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
+			"roles": ["Art Director", "Front-End Developer", "Designer"],
+			"technologies": ["Javascript"],
+			"images": [
+				{
+					"url": "projects/wetfeet-polls/1.png"
+				},
+				{
+					"url": "projects/wetfeet-polls/2.png"
+				},
+				{
+					"url": "projects/wetfeet-polls/3.png"					
+				}
+
+			]
+		},
+
+		{	
+			"id": 7,
+			"title": "Wetfeet: Surveys", 
+			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
+			"roles": ["Art Director", "Front-End Developer", "Designer"],
+			"technologies": ["Javascript"],
+			"images": [
+				{
+					"url": "projects/wetfeet-surveys/1.png"
+				},
+				{
+					"url": "projects/wetfeet-surveys/2.png"
+				},
+				{
+					"url": "projects/wetfeet-surveys/3.png"					
+				},
+				{
+					"url": "projects/wetfeet-surveys/4.png"					
+				}
+
+			]
+		},
+		{	
+			"id": 8,
+			"title": "Guess Who", 
+			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
+			"roles": ["Art Director", "Front-End Developer", "Designer"],
+			"technologies": ["Javascript"],
+			"images": [
+				{
+					"url": "projects/guesswho/guesswho1.jpg"
+				},
+				{
+					"url": "projects/guesswho/guesswho2.jpg"
+				},
+				{
+					"url": "projects/guesswho/guesswho3.jpg"					
+				}
+
+			]
+		},
+
+		{	
+			"id": 9,
+			"title": "Universum", 
+			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
+			"roles": ["Art Director", "Front-End Developer", "Designer"],
+			"technologies": ["Javascript"],
+			"images": [
+				{
+					"url": "projects/universum/1.png"
+				},
+				{
+					"url": "projects/universum/2.png"
+				},
+				{
+					"url": "projects/universum/3.png"					
+				},
+				{
+					"url": "projects/universum/4.png"
+				},
+				{
+					"url": "projects/universum/5.png"					
+				}
+
+			]
+		},
+
+				{	
+			"id": 10,
+			"title": "Miscellany", 
+			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
+			"roles": [],
+			"technologies": ["Javascript"],
+			"images": [
+				{
+					"url": "projects/universum/1.png"
+				},
+				{
+					"url": "projects/universum/2.png"
+				},
+				{
+					"url": "projects/universum/3.png"					
+				},
+				{
+					"url": "projects/universum/4.png"
+				},
+				{
+					"url": "projects/universum/5.png"					
+				}
+
+			]
+		}
+
+
 	]
 
 }

@@ -26,9 +26,16 @@ ul, ol {
 
 p {
   font-family: Didot;
-  font-size: 22px;
-  line-height: 50px;
+	font-size: 18px;
+  line-height: 44px;
   font-weight: 100;
+}
+
+
+.intro {
+	p {
+		  text-indent: 35px;
+	}
 }
 //
 .stripe {
@@ -85,20 +92,22 @@ section {
 	text-align: center;
 	p {
 		margin-bottom: 0;
+		font-size: 22px;
+  	line-height: 50px;	
 	}
 }
 
 .projects-nav {
 	margin-bottom: 20px;
-	// text-align: center;
+	text-align: center;
 	p {
 		display: inline-block;
 	}
 }
 .project-link {
 	
-
-      margin-right: 25px;
+		margin-bottom: 15px;
+    margin-right: 25px;
     display: inline-block;
     font-size: 15px;
     background: #F8F8F8;
@@ -129,4 +138,15 @@ section {
 			max-width: 100%;
 			margin: 0 20px;
 	}
+}
+
+.contact-methods {
+	text-align: center;
+ 	li {
+		@extend .project-link;
+	  font-size: 30px;
+    display: inline-block;
+    margin: 0 35px;
+    padding: 5px 30px;
+	}	
 }

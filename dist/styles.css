@@ -5166,9 +5166,12 @@ ul, ol {
 
 p {
   font-family: Didot;
-  font-size: 22px;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 44px;
   font-weight: 100; }
+
+.intro p {
+  text-indent: 35px; }
 
 .stripe {
   background: #111;
@@ -5209,14 +5212,18 @@ section {
 .by-line {
   text-align: center; }
   .by-line p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 50px; }
 
 .projects-nav {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  text-align: center; }
   .projects-nav p {
     display: inline-block; }
 
-.project-link {
+.project-link, .contact-methods li {
+  margin-bottom: 15px;
   margin-right: 25px;
   display: inline-block;
   font-size: 15px;
@@ -5226,7 +5233,7 @@ section {
   color: black;
   /* text-transform: uppercase; */
   font-family: 'Didot'; }
-  .project-link.is-selected {
+  .project-link.is-selected, .contact-methods li.is-selected {
     border-bottom: 5px solid black; }
 
 .project {
@@ -5241,3 +5248,11 @@ section {
 .project-images img {
   max-width: 100%;
   margin: 0 20px; }
+
+.contact-methods {
+  text-align: center; }
+  .contact-methods li {
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 35px;
+    padding: 5px 30px; }
