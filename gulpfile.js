@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 // var jshint = require('gulp-jshint');
-var concat = require('gulp-concat');
-// var uglify = require('gulp-uglify');
+// var concat = require('gulp-concat');
+var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
@@ -15,16 +16,25 @@ gulp.task('styles', function() {
       .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('browserify', function() {
-	console.log('blahhhhh');
+
+
+gulp.task('js', function() {
   return browserify('./js/app.js')
-      .bundle()
-      //Pass desired output filename to vinyl-source-stream
-      .pipe(source('app.js'))
-      // Start piping stream to tasks!
-      .pipe(gulp.dest('./dist/'));
+    .bundle()
+    //Pass desired output filename to vinyl-source-stream
+    .pipe(source('app.js'))
+    // Start piping stream to tasks!
+    .pipe(gulp.dest('./dist/'))
 });
 
+
+gulp.task('uglify', ['js'], function(){
+  console.log('yooooo')
+  return gulp.src(['dist/app.js'])
+      .pipe(rename('uglify.js'))
+      .pipe(uglify())
+      .pipe(gulp.dest('./dist/'));
+});
  
 gulp.task('templates', function () {
   var templateData = JSON.parse(fs.readFileSync("./projects.json", "utf8"));
@@ -39,7 +49,7 @@ gulp.task('templates', function () {
 			}
 		}
 	}
-	console.log(templateData)
+	// console.log(templateData)
 	return gulp.src('templates/index2.hbs')
 
 		.pipe(handlebars(templateData, options))
@@ -50,11 +60,11 @@ gulp.task('templates', function () {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['browserify']);
+    gulp.watch('js/*.js', ['js', 'uglify']);
     gulp.watch('scss/**/*.scss', ['styles']);
     gulp.watch('templates/**/*.hbs', ['templates']);
     gulp.watch('projects.json', ['templates']);
 });
 
 //Watch task
-gulp.task('default', ['styles', 'browserify', 'watch', 'templates']);
+gulp.task('default', ['styles', 'js', 'uglify', 'watch', 'templates']);

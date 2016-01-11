@@ -1,40 +1,53 @@
 var $ = require('jquery');
-require('jquery-bridget');
 var Flickity = require('flickity-imagesloaded');
+require('jquery-bridget');
 // make Flickity a jQuery plugin
-$.bridget( 'flickity', Flickity );
-
-
+$.bridget('flickity', Flickity);
 
 $(document).ready(function(){
-	var $projectsImages = $('.project-images').flickity({
+	var $projectsNav = $('.projects-nav');
+	var $projects = $('.project');
+	var $firstProject = $projects.first()
+
+	$firstProject.removeClass('hide');
+	$firstProject.find('.project-images').flickity({
 	  // options
 	  imagesLoaded: true,
 	  wrapAround: true,
-	  pageDots: false
+	  pageDots: true
 	  // setGallerySize: true
 	});
-	
-	// elements
-	var $projectsNav = $('.projects-nav');
-	var $projects = $('.project');
-	$projects.hide();
-	$projects.first().fadeIn(1000);
 
 	$projectsNav.on('click', '.project-link', function(){
+			//hide all projects
+			$projects.addClass('hide');
+
+			//grab selected project and unhide it
 			var projectId = $(this).data('project-id');
-			$projects.hide();
 			var $project = $('.projects').find('[data-project-id=' + projectId + ']');
-			$project.fadeIn(200, function() {
-				var $projectsImages = $('.project-images').flickity({
+			$project.removeClass('hide');
+
+			// $project.fadeIn(200, function() {
+			// 	// setTimeout(function(){
+			// 		console.log('yo')
+			// 		$('.project-images').flickity({
+			// 					  // options
+			// 					  imagesLoaded: true,
+			// 					  wrapAround: true,
+			// 					  pageDots: false
+			// 					  // setGallerySize: true
+			// 					});
+			// 	// },2000);
+			// });
+
+			//initiate flickity on it
+			$project.find('.project-images').flickity({
 			  // options
 			  imagesLoaded: true,
 			  wrapAround: true,
-			  pageDots: false
+			  pageDots: true
 			  // setGallerySize: true
 			});
-			});
-				
 	
 	})
 	// var flkty = $projects.data('flickity');

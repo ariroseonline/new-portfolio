@@ -1,41 +1,54 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var $ = require('jquery');
-require('jquery-bridget');
 var Flickity = require('flickity-imagesloaded');
+require('jquery-bridget');
 // make Flickity a jQuery plugin
-$.bridget( 'flickity', Flickity );
-
-
+$.bridget('flickity', Flickity);
 
 $(document).ready(function(){
-	var $projectsImages = $('.project-images').flickity({
+	var $projectsNav = $('.projects-nav');
+	var $projects = $('.project');
+	var $firstProject = $projects.first()
+
+	$firstProject.removeClass('hide');
+	$firstProject.find('.project-images').flickity({
 	  // options
 	  imagesLoaded: true,
 	  wrapAround: true,
-	  pageDots: false
+	  pageDots: true
 	  // setGallerySize: true
 	});
-	
-	// elements
-	var $projectsNav = $('.projects-nav');
-	var $projects = $('.project');
-	$projects.hide();
-	$projects.first().fadeIn(1000);
 
 	$projectsNav.on('click', '.project-link', function(){
+			//hide all projects
+			$projects.addClass('hide');
+
+			//grab selected project and unhide it
 			var projectId = $(this).data('project-id');
-			$projects.hide();
 			var $project = $('.projects').find('[data-project-id=' + projectId + ']');
-			$project.fadeIn(200, function() {
-				var $projectsImages = $('.project-images').flickity({
+			$project.removeClass('hide');
+
+			// $project.fadeIn(200, function() {
+			// 	// setTimeout(function(){
+			// 		console.log('yo')
+			// 		$('.project-images').flickity({
+			// 					  // options
+			// 					  imagesLoaded: true,
+			// 					  wrapAround: true,
+			// 					  pageDots: false
+			// 					  // setGallerySize: true
+			// 					});
+			// 	// },2000);
+			// });
+
+			//initiate flickity on it
+			$project.find('.project-images').flickity({
 			  // options
 			  imagesLoaded: true,
 			  wrapAround: true,
-			  pageDots: false
+			  pageDots: true
 			  // setGallerySize: true
 			});
-			});
-				
 	
 	})
 	// var flkty = $projects.data('flickity');
