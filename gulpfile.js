@@ -50,10 +50,10 @@ gulp.task('templates', function () {
 		}
 	}
 	// console.log(templateData)
-	return gulp.src('templates/index2.hbs')
+	return gulp.src('templates/index.hbs')
 
 		.pipe(handlebars(templateData, options))
-		.pipe(rename('index2.html'))
+		.pipe(rename('index.html'))
 		.pipe(gulp.dest('./'));
 });
 

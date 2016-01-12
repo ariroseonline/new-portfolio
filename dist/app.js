@@ -14,7 +14,7 @@ $(document).ready(function(){
 	$firstProject.find('.project-images').flickity({
 	  // options
 	  imagesLoaded: true,
-	  wrapAround: true,
+	  wrapAround: false,
 	  pageDots: true
 	  // setGallerySize: true
 	});
@@ -45,7 +45,7 @@ $(document).ready(function(){
 			$project.find('.project-images').flickity({
 			  // options
 			  imagesLoaded: true,
-			  wrapAround: true,
+			  wrapAround: false,
 			  pageDots: true
 			  // setGallerySize: true
 			});

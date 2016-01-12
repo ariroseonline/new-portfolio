@@ -1,11 +1,43 @@
 {
 	"projects": [
+
 		{	
 			"id": 1,
+			"title": "GoWatchIt: Superwidget", 
+			"description":"A pioneering API-backed embeddable SDK and theming engine for film releases, TV programming, and advertising campaigns. Served millions of times a month across the web from major studio properties (Universal, Sony, Paramount, FOX) to large content sites (NYTimes, Buzzfeed, Entertainment Weekly).",
+			"roles": ["Front-End Development", "Art Direction", "Design", "Project Management"],
+			"technologies": ["Javascript", "Ember.js", "SCSS", "Rails", "Handlebars"],
+			"images": [
+				{
+					"url": "projects/gwi-superwidget/1.png"
+				},
+				{
+					"url": "projects/gwi-superwidget/2.png"
+				},
+				{
+					"url": "projects/gwi-superwidget/3.png"					
+				},
+				{
+					"url": "projects/gwi-superwidget/4.png"					
+				},
+				{
+					"url": "projects/gwi-superwidget/5.png"					
+				},
+				{
+					"url": "projects/gwi-superwidget/6.png"					
+				},
+				{
+					"url": "projects/gwi-superwidget/7.jpg"					
+				}
+
+			]
+		},
+		{	
+			"id": 2,
 			"title": "GoWatchIt: Consumer Site", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
-			"roles": ["Art Director", "Front-End Developer", "Designer"],
-		  "technologies": ["Javascript"],
+			"description": "Fully responsive consumer web application  Redesign of existing outdated website through managing stakeholders, freelancers, and team members ",
+			"roles": ["Front-End Development", "Art Direction", "Project Management"],
+		  "technologies": ["Javascript", "Ember.js", "SCSS", "Rails", "Handlebars"],
 			"images": [
 				{
 					"url": "projects/gwi-site/1.png"
@@ -29,48 +61,14 @@
 			]
 		},
 		{	
-			"id": 2,
-			"title": "GoWatchIt: Superwidget", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
-			"roles": ["Art Director", "Front-End Developer", "Designer"],
-			"technologies": ["Javascript"],
-			"images": [
-				{
-					"url": "projects/gwi-superwidget/1.png"
-				},
-				{
-					"url": "projects/gwi-superwidget/2.png"
-				},
-				{
-					"url": "projects/gwi-superwidget/3.png"					
-				},
-				{
-					"url": "projects/gwi-superwidget/4.png"					
-				},
-				{
-					"url": "projects/gwi-superwidget/5.png"					
-				},
-				{
-					"url": "projects/gwi-superwidget/6.png"					
-				}
-
-			]
-		},
-		{	
 			"id": 3,
 			"title": "GoWatchIt: Dashboard", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
-			"roles": ["Art Director", "Front-End Developer", "Designer"],
-			"technologies": ["Javascript"],
+			"description": "Fully featured content management system (CMS) for film and TV studios. Real-time analytics, custom reporting, and visual asset creation and theming (think Google Analytics and Squarespace for film/TV releases)",
+			"roles": ["Front-End Development", "Design"],
+			"technologies": ["Javascript", "Ember.js", "Ember Data", "Web Sockets", "SCSS", "Handlebars"],
 			"images": [
 				{
-					"url": "projects/gwi-dashboard/1.png"
-				},
-				{
-					"url": "projects/gwi-dashboard/2.png"
-				},
-				{
-					"url": "projects/gwi-dashboard/3.png"					
+					"url": "http://placehold.it/900x400?text=Currently in Progress"
 				}
 
 			]
@@ -78,10 +76,10 @@
 
 		{	
 			"id": 4,
-			"title": "DueProps", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
-			"roles": ["Art Director", "Front-End Developer", "Designer"],
-			"technologies": ["Javascript"],
+			"title": "DueProps: Branding and Redesign", 
+			"description": "An HR management app for employee recognition started by (in)famous Ruby and Rails developer and author Obie Fernandez.",
+			"roles": ["Art Direction", "Design", "Front-End Development"],
+			"technologies": ["Javascript", "SCSS", "HTML", "Wireframing"],
 			"images": [
 				{
 					"url": "projects/dueprops/1.png"
@@ -105,10 +103,10 @@
 
 		{	
 			"id": 5,
-			"title": "Flatiron School", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
-			"roles": ["Art Director", "Front-End Developer", "Designer"],
-			"technologies": ["Javascript"],
+			"title": "Flatiron School: Branding", 
+			"description": "Fledgling coding bootcamp needed to make its mark. I worked as Campus Director in the inaugural cohort, handling admissions, events, employer outreach, marketing, social media — and yes, branding.",
+			"roles": ["Art Direction", "Creative"],
+			"technologies": [],
 			"images": [
 				{
 					"url": "projects/flatiron/1.png"
@@ -118,6 +116,9 @@
 				},
 				{
 					"url": "projects/flatiron/3.png"					
+				},
+				{
+					"url": "projects/flatiron/4.png"					
 				}
 
 			]
@@ -125,30 +126,10 @@
 
 		{	
 			"id": 6,
-			"title": "Wetfeet: Polls", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
-			"roles": ["Art Director", "Front-End Developer", "Designer"],
-			"technologies": ["Javascript"],
-			"images": [
-				{
-					"url": "projects/wetfeet-polls/1.png"
-				},
-				{
-					"url": "projects/wetfeet-polls/2.png"
-				},
-				{
-					"url": "projects/wetfeet-polls/3.png"					
-				}
-
-			]
-		},
-
-		{	
-			"id": 7,
 			"title": "Wetfeet: Grad Report", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
-			"roles": ["Art Director", "Front-End Developer", "Designer"],
-			"technologies": ["Javascript"],
+			"description": "Wetfeet, owned by Universum, had exclusive survey data gathered from hundreds of thousands exiting college students around the world. This interactive report profiled the student and let him or her visualize their results.",
+			"roles": ["Front-End Developer", "Art Direction"],
+			"technologies": ["Javascript", "Angular.js", "SCSS", "HTML", "Wireframing"],
 			"images": [
 				{
 					"url": "projects/wetfeet-report/1.png"
@@ -165,12 +146,50 @@
 
 			]
 		},
+
+		{	
+			"id": 7,
+			"title": "Wetfeet: Culture Fit Prototype", 
+			"description": "This prototype, subsequently released publicly to college graduates, asked the user a series of polling questions. It matched the prospective job seekers with employer cultures through a basic use of machine learning and a social graph API.",
+			"roles": ["Front-End Development", "Creative"],
+			"technologies": ["Javascript", "Angular.js", "SCSS", "HTML", "Wireframing"],
+			"images": [
+				{
+					"url": "projects/wetfeet-polls/1.png"
+				},
+				{
+					"url": "projects/wetfeet-polls/2.png"
+				}
+
+			]
+		},
+
 		{	
 			"id": 8,
+			"title": "Breed Breakdown", 
+			"description": "An interactive tool to help the new dog owner find the perfect breed based on their ideal preferences.",
+			"roles": ["Front-End Developer", "Creative"],
+			"technologies": ["Javascript", "CSS", "HTML"],
+			"images": [
+				{
+					"url": "projects/breedbreakdown/1.png"
+				},
+				{
+					"url": "projects/breedbreakdown/2.jpg"
+				},
+				{
+					"url": "projects/breedbreakdown/3.gif"					
+				}
+
+			]
+		},
+
+		{	
+			"id": 9,
 			"title": "Guess Who", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
-			"roles": ["Art Director", "Front-End Developer", "Designer"],
-			"technologies": ["Javascript"],
+			"description": "At Ad School (art school for the brand advertising industry), my friends and I made true-to-life versions of Guess Who composed of students and faculty at the school.",
+			"roles": ["Art Director", "Creative"],
+			"technologies": [],
 			"images": [
 				{
 					"url": "projects/guesswho/guesswho1.jpg"
@@ -186,7 +205,7 @@
 		},
 
 		{	
-			"id": 9,
+			"id": 10,
 			"title": "Universum", 
 			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
 			"roles": ["Art Director", "Front-End Developer", "Designer"],
@@ -212,11 +231,11 @@
 		},
 
 				{	
-			"id": 10,
+			"id": 11,
 			"title": "Miscellany", 
-			"description": "This was the gowatch main product that Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem recusandae, saepe temporibus molestiae nam voluptate blanditiis obcaecati totam omnis repellendus illo odit quasi non adipisci autem neque sed vero delectus, dolore ut sequi aspernatur doloremque atque quisquam. Sapiente magnam aliquid, cum quidem exercitationem iste asperiores dolore suscipit quam, voluptate earum.",
+			"description": "Things that don't fit nicely elsewhere. Logos, type treatments, old resume iterations, etc.",
 			"roles": [],
-			"technologies": ["Javascript"],
+			"technologies": ["Photoshop"],
 			"images": [
 				{
 					"url": "projects/misc/1.png"
@@ -257,9 +276,12 @@
 
 			]
 		}
+	],
+
+	"resume": "files/ari.rose.resume.nov.2015.pdf"
 
 
-	]
+
 
 }
 

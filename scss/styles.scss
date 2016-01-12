@@ -97,6 +97,10 @@ section {
 	}
 }
 
+.projects {
+	margin-bottom: 40px;
+}
+
 .projects-nav {
 	margin-bottom: 20px;
 	text-align: center;
@@ -133,15 +137,15 @@ section {
 	text-align: center;
 	list-style-type: none;
 	p {
-		font-size: 12px;
-		line-height: normal;
+		font-size: 14px;
+		line-height: 23px;
 		text-align: left;
 	}
 }
 
-.project-title {
+p.project-title {
 	font-weight: 900;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .project-images {
